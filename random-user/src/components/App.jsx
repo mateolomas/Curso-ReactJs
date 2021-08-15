@@ -16,7 +16,8 @@ export class App extends Component {
         this.state = {
             name: "Coca Cola",
             country: 'EC',
-            year: 2020
+            year: 2020,
+            telefono: '15'
 
         }
     }
@@ -31,6 +32,7 @@ export class App extends Component {
           return (
             <> 
             <Title text="Some title"/>
+
             <ItemUser company={this.state} />    
             <UserForm onChange={this.handleChange}/>
             </>

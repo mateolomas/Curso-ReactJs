@@ -8,6 +8,8 @@ export class UserForm extends Component {
       name: "",
       country: "",
       year: "",
+      
+      
     };
   }
 
@@ -25,7 +27,7 @@ export class UserForm extends Component {
   render() {
     return (
       <div>
-        <h3>Nuevo usuario</h3>
+        <h3>Nueva compania</h3>
         <form className="form1" onSubmit={this.handleSubmit}>
           <div className="inputForm">
             <label>Name: </label>
@@ -54,7 +56,8 @@ export class UserForm extends Component {
               value={this.state.year}
             />
           </div>
-          <button type="button"> Add</button>
+          
+          <button> Add</button>
         </form>
       </div>
     );

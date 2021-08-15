@@ -8,7 +8,7 @@ class ItemUser extends React.Component {
   state = {};
 
   render() {
-    const { name, country, year } = this.props.company;
+    const { name, country, year, telefono } = this.props.company;
     return (
       <div className="item">
         <p>
@@ -20,6 +20,11 @@ class ItemUser extends React.Component {
         <p>
           <strong>year: </strong> {year}
         </p>
+        { telefono && 
+        <p>
+          <strong>Telefono: </strong> {telefono}
+        </p>
+            }
       </div>
     );
   }
