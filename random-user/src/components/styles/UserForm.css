@@ -1,0 +1,16 @@
+
+h3 {font-size: large;}
+
+
+.form1 {
+    margin: 30px;
+    text-align: center;
+    padding: 12px;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
