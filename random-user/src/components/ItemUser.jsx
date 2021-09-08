@@ -25,6 +25,7 @@ class ItemUser extends React.Component {
           <strong>Telefono: </strong> {telefono}
         </p>
             }
+          <hr/>
       </div>
     );
   }

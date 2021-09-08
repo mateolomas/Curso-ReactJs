@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import ItemUser from './ItemUser'
 import Title from './Title'
 //import UserCount from './UserCount';
-import UserForm from './UserForm';
+//import UserForm from './UserForm';
 
-
+import userList from '../data'
 
 
 
@@ -14,11 +14,7 @@ export class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            name: "Coca Cola",
-            country: 'EC',
-            year: 2020,
-            telefono: '15'
-
+            users: userList
         }
     }
 
@@ -32,9 +28,13 @@ export class App extends Component {
           return (
             <> 
             <Title text="Some title"/>
+            {this.state.users.map((item, index) => {
+                return ( <ItemUser key={index} user={item} /> )
+            } )
+            
+            }
+            
 
-            <ItemUser company={this.state} />    
-            <UserForm onChange={this.handleChange}/>
             </>
           )
       }
